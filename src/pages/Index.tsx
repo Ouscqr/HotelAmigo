@@ -26,7 +26,7 @@ const featuredApartments: ApartmentProps[] = [
     name: "Bed in Female 8-Bed Dormitory Room",
     description: "Bed in Female 8 Person Dormitory Room - Shared Bathroom. Upper Floor. Accessible Only By Steep And Narrow Staircase - No Elevator.",
     capacity: 8,
-    size: 75,
+    size: 35,
     image: "https://static.cubilis.eu/securereservations/photos/amigo-budget-hostel-amsterdam/v3/20250213161529.png?width=558&height=418&mode=crop&scale=both&format=jpg&quality=90",
     features: ["Wi-Fi", "Public Bathroom"]
   },
@@ -203,11 +203,20 @@ export default function Index() {
             </div>
             
             <div className="text-center mt-12">
-              <Button asChild className="btn-primary">
+              {/* <Button asChild className="btn-primary">
                 <Link to="/apartments">
                   {t.home.featuredApartments.viewAll} <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
-              </Button>
+              </Button> */}
+              <Button asChild className="btn-primary">
+                  <a 
+                    href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam?message=SessionLost" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    {t.home.featuredApartments.viewAll}
+                  </a>
+                </Button>
             </div>
           </div>
         </section>
@@ -215,7 +224,7 @@ export default function Index() {
         {/* Testimonials Section
         <TestimonialsSection /> */}
         
-        {/* Features Section */}
+        {/* Features Section
         <section className="section bg-card">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
@@ -246,10 +255,10 @@ export default function Index() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         
         {/* CTA Section */}
-        <section className="relative py-24 bg-primary/5">
+        {/* <section className="relative py-24 bg-primary/5">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -264,7 +273,7 @@ export default function Index() {
             </div>
           </div>
           
-          {/* Decorative waves */}
+          //Decorative waves 
           <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
             <svg 
               className="absolute bottom-0 w-full h-24 fill-background"
@@ -282,7 +291,7 @@ export default function Index() {
               />
             </svg>
           </div>
-        </section>
+        </section> */}
       </main>
       
       <Footer />

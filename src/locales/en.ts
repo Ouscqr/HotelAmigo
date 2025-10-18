@@ -16,7 +16,7 @@ export const en = {
     scrollDown: "Scroll Down"
   },
   footer: {
-    description: "Luxurious beachfront apartments and hotel rooms with stunning sea views, offering the perfect blend of comfort and elegance for your dream vacation.",
+    description: "Comfortable accommodations nestled in Amsterdam's vibrant streets, providing the perfect cozy base for exploring the city's rich culture and charm.",
     quickLinks: "Quick Links",
     contact: "Contact",
     newsletter: "Newsletter",
@@ -62,9 +62,9 @@ export const en = {
     },
     featuredApartments: {
       subtitle: "Our Accommodations",
-      title: "Featured Apartments",
-      description: "Discover our most popular accommodation options, each offering a perfect blend of comfort, style, and breathtaking sea views.",
-      viewAll: "View All Apartments"
+      title: "Featured Rooms",
+      description: "Get to know our favorite room options - affordable, comfortable stays that put Amsterdam's best sights right at your doorstep.",
+      viewAll: "View All Rooms"
     },
     amenities: {
       subtitle: "Hotel Amenities",
@@ -234,7 +234,7 @@ export const en = {
     email: "Email",
     receptionHours: "Reception Hours",
     checkInTime: "Check-in: After 3:00 PM",
-    checkOutTime: "Check-out: Before 11:00 AM",
+    checkOutTime: "Check-out: Before 10:00 AM",
     sendMessage: "Send Us a Message",
     fullName: "Full Name",
     phoneNumber: "Phone Number",
@@ -249,27 +249,27 @@ export const en = {
     questions: {
       checkInOut: {
         question: "What are your check-in and check-out times?",
-        answer: "Check-in is from 3:00 PM onwards, and check-out is until 11:00 AM. Early check-in or late check-out may be arranged based on availability."
+        answer: "You're welcome to check in anytime after 3:00 PM, and we request that check-out is completed by 10:00 AM to prepare for our next guests."
       },
       parking: {
         question: "Is parking available at the property?",
-        answer: "Yes, we offer complimentary parking for all guests. Valet parking service is also available for an additional fee."
+        answer: "No, we don't have parking facilities. There are several public parking options within walking distance of the hotel."
       },
       pets: {
-        question: "Are pets allowed in the apartments?",
-        answer: "We welcome pets in designated pet-friendly apartments. Please inform us in advance if you plan to bring a pet, as additional charges may apply."
+        question: "Can I bring my pet with me?",
+        answer: "No, we're unable to accommodate pets or animals of any kind due to our hotel policy. We hope you understand."
       },
       breakfast: {
-        question: "Is breakfast included in the room rate?",
-        answer: "Breakfast is included in select room packages. You can check the inclusion during the booking process or add it to your reservation at any time."
+        question: "Do you serve breakfast",
+        answer: "No, we don't offer breakfast, but this gives you the perfect opportunity to explore Amsterdam's wonderful cafe culture right from your doorstep!"
       },
       transfers: {
-        question: "Do you offer airport transfers?",
-        answer: "Yes, we offer airport transfers for an additional fee. Please contact our concierge at least 48 hours before your arrival to arrange transportation."
+        question: "Are there restaurant or kitchen facilities available at the hotel?",
+        answer: "No, we do not have a restaurant or guest kitchen facilities. However, we're located in an area with plenty of affordable dining options, cafes, and supermarkets within walking distance. Our staff would be happy to recommend some great local spots for meals and snacks."
       },
       amenities: {
-        question: "What amenities are available at the property?",
-        answer: "Our property features swimming pools, a spa, restaurants, a beach bar, fitness center, and direct beach access. All apartments include Wi-Fi, air conditioning, and modern appliances."
+        question: "Are there rooms with a balcony",
+        answer: "No, we don't have rooms with balconies"
       }
     }
   },

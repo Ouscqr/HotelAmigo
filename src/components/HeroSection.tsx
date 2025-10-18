@@ -39,7 +39,7 @@ export default function HeroSection() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
       
-      {/* Content */}
+      {/* {/* Content */}
       <div
         className="relative h-full flex flex-col justify-center items-center text-center px-4"
         style={{ transform: `translateY(${contentY}px)` }}
@@ -60,16 +60,14 @@ export default function HeroSection() {
               href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
               target="_blank" 
               rel="noopener noreferrer"
-            >
+            > 
               {t.hero.bookStay}
             </a>
           </Button>
-            {/* <Button asChild variant="hero" size="lg" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
-              <Link to="/apartments">{t.hero.exploreApartments}</Link>
-            </Button> */}
+
           </div>
         </div>
-      </div>
+      </div> 
       
       {/* Scroll down indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
@@ -83,7 +81,7 @@ export default function HeroSection() {
       </div>
       
       {/* Animated wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
+      {/* <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
         <svg 
           className="absolute bottom-0 w-full h-24 fill-white dark:fill-background"
           preserveAspectRatio="none"
@@ -99,7 +97,10 @@ export default function HeroSection() {
             className="animate-wave opacity-100 [animation-delay:-4s]"
           />
         </svg>
-      </div>
+      </div> */}
+
+      
+      
     </section>
   );
 }

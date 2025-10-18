@@ -75,7 +75,7 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
               key={index} 
               className="flex items-center text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full"
             >
-              {feature === "Bathroom" || feature === "Private Bathroom" || feature === "Public Bathroom" && <Bath className="h-3.5 w-3.5 mr-1" />}
+              {(feature === "Bathroom" || feature === "Private Bathroom" || feature === "Public Bathroom") && <Bath className="h-3.5 w-3.5 mr-1" />}
               {feature === "Kitchen" && <Coffee className="h-3.5 w-3.5 mr-1" />}
               {feature === "Wi-Fi" && <Wifi className="h-3.5 w-3.5 mr-1" />}
               <span>{feature}</span>

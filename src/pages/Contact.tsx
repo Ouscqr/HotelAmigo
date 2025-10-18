@@ -92,32 +92,37 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.address}</h3>
                       <p className="text-muted-foreground">
-                        123 Seaside Boulevard<br />
-                        Costa Bella, 12345<br />
-                        Italy
+                        Linnaeusstraat 199-203 <br />
+                        1093 EN Amsterdam <br />
+                        Netherlands
                       </p>
                     </div>
                   </div>
                   
+
                   <div className="flex items-start">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.phone}</h3>
-                      <p className="text-muted-foreground">+39 123 4567 890</p>
-                      <p className="text-muted-foreground">+39 098 7654 321 (Reservations)</p>
+                      <a 
+                        href="tel:+31208454743" 
+                        className="text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 cursor-pointer"
+                      >
+                        +31 20 845 4743
+                      </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.email}</h3>
-                      <p className="text-muted-foreground">info@maresereno.com</p>
-                      <p className="text-muted-foreground">reservations@maresereno.com</p>
+                      <p className="text-muted-foreground">Hotel@Amigo</p>
+                      <p className="text-muted-foreground">reservations@Amigo.com</p>
                     </div>
                   </div>
                   
@@ -128,7 +133,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.receptionHours}</h3>
                       <p className="text-muted-foreground">
-                        Monday - Sunday: 24 hours<br />
+                        Monday - Sunday: 08:00-22:00 <br />
                         {t.contact.checkInTime}<br />
                         {t.contact.checkOutTime}
                       </p>
@@ -138,7 +143,7 @@ export default function Contact() {
                 
                 <div className="aspect-video rounded-xl overflow-hidden">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03606358136!2d14.165818971864153!3d40.85529294646443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0a3c328d896b%3A0x309e11f99628150!2sGulf%20of%20Naples!5e0!3m2!1sen!2sus!4v1628613152777!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.7622736920202!2d4.925064476618768!3d52.35659677201878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60970c2a2299b%3A0x8bdb9d061cbef81!2sAmigo%20Hotel!5e0!3m2!1snl!2snl!4v1760271952062!5m2!1snl!2snl" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
