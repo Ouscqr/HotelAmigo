@@ -108,11 +108,11 @@ export default function Index() {
                 <p className="text-muted-foreground mb-8">
                   {t.home.welcome.description2}
                 </p>
-                <Button asChild className="btn-primary">
+                {/* <Button asChild className="btn-primary">
                   <Link to="/about">
                     {t.home.welcome.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
-                </Button>
+                </Button> */}
               </div>
               
               <div className="relative animate-fade-in [animation-delay:300ms]">
@@ -210,7 +210,7 @@ export default function Index() {
               </Button> */}
               <Button asChild className="btn-primary">
                   <a 
-                    href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam?message=SessionLost" 
+                    href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

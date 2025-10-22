@@ -29,16 +29,94 @@ export default function Contact() {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
+
   
+  
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+    
+  //   // In a real app, this would send the form data to a server
+  //   console.log("Form submitted:", formData);
+    
+  //   setIsSubmitted(true);
+    
+  //   // Reset form after 3 seconds
+  //   setTimeout(() => {
+  //     setIsSubmitted(false);
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       phone: "",
+  //       subject: "",
+  //       message: ""
+  //     });
+  //   }, 3000);
+  // };
+
+
+  // ===================================== FORM SUBMIT AJAX #1 OPTION ==========================================
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+    
+  //   const formData = new FormData(e.currentTarget as HTMLFormElement);
+    
+  //   try {
+  //     const response = await fetch('https://formsubmit.co/ajax/boscarchen@icloud.com', {
+  //       method: 'POST',
+  //       body: formData,
+  //     });
+      
+  //     if (response.ok) {
+  //       setIsSubmitted(true); // Show success message
+  //     }
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
+
+
+  // ================================ INSTANT REDIRECT OPTION #2 ============================= 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // In a real app, this would send the form data to a server
-    console.log("Form submitted:", formData);
+    // Create professional email content
+    const emailContent = `
+HOTEL AMIGO - BOOKING INQUIRY
+==============================
+
+GUEST INFORMATION:
+------------------
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+INQUIRY DETAILS:
+----------------
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+---
+This inquiry was submitted via Hotel Amigo website
+Date: ${new Date().toLocaleDateString()}
+Time: ${new Date().toLocaleTimeString()}
+    `.trim();
+
+    // Encode for mailto
+    const subject = `🏨 Booking Inquiry: ${formData.subject}`;
+    const body = encodeURIComponent(emailContent);
     
+    // Create temporary link and click it
+    const mailtoLink = `mailto:boscarchen@icloud.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const link = document.createElement('a');
+    link.href = mailtoLink;
+    link.click();
+    
+    // Show success message
     setIsSubmitted(true);
     
-    // Reset form after 3 seconds
+    // Optional: Reset form after delay
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
@@ -48,8 +126,10 @@ export default function Contact() {
         subject: "",
         message: ""
       });
-    }, 3000);
+    }, 5000);
   };
+
+  
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -160,7 +240,7 @@ export default function Contact() {
                 
                 <div className="glass-card p-6">
                   {!isSubmitted ? (
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form onSubmit={handleSubmit} className="space-y-6"> 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">{t.contact.fullName}</Label>

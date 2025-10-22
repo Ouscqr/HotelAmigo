@@ -94,8 +94,17 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
             {/* <span className="text-muted-foreground text-sm"> / {t.booking.summary.night}</span> */}
           </div>
           <Button asChild className="btn-primary">
-            <Link to={`/apartments/${apartment.id}`}>{t.apartments.filters.viewDetails}</Link>
+            <a 
+              href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {t.apartments.filters.viewDetails}
+            </a>
           </Button>
+          
+
+          
         </div>
       </div>
     </div>

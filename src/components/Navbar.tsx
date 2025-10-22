@@ -164,7 +164,7 @@ export default function Navbar() {
           
           <Button asChild className="btn-primary">
             <a 
-              href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam?message=SessionLost" 
+              href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
               target="_blank" 
               rel="noopener noreferrer"
             >
