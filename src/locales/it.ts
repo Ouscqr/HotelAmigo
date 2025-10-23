@@ -275,29 +275,17 @@ export const it = {
   },
   apartmentDescriptions: {
     "1": {
-      name: "Suite Deluxe con Vista Mare",
-      description: "Suite lussuosa con viste panoramiche sul mare, servizi moderni e un balcone privato."
+      name: "Camera doppia - bagno privato",
+      description: "Camera per 2 persone con letto matrimoniale e bagno privato"
     },
     "2": {
-      name: "Appartamento Familiare Premium",
-      description: "Appartamento spazioso ideale per famiglie, con cucina completa e splendide viste sulla costa."
+      name: "Posto letto in dormitorio femminile da 8 letti",
+      description: "Posto letto in dormitorio femminile da 8 persone - Bagno in comune. Piano superiore. Accessibile solo tramite scale ripide e strette - Senza ascensore."
     },
     "3": {
-      name: "Studio Executive Sulla Spiaggia",
-      description: "Studio elegante con accesso diretto alla spiaggia, design moderno e finiture premium."
+      name: "Camera Doppia Basic - Bagno in Comune",
+      description: "Camera per 2 persone - Letto matrimoniale - Bagno in comune esterno alla camera. Piano superiore. Accessibile solo tramite una scala ripida e stretta - Senza ascensore."
     },
-    "4": {
-      name: "Suite Attico di Lusso",
-      description: "Suite esclusiva all'ultimo piano con ampia terrazza e viste panoramiche sul mare."
-    },
-    "5": {
-      name: "Camera Doppia Classica",
-      description: "Comoda camera d'hotel con servizi moderni e viste parziali sul mare."
-    },
-    "6": {
-      name: "Appartamento con Vista Giardino",
-      description: "Appartamento tranquillo circondato da lussureggianti giardini, a pochi passi dalla spiaggia."
-    }
   },
   amenitiesPage: {
     title: "I Nostri Servizi",

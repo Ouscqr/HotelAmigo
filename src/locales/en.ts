@@ -275,7 +275,7 @@ export const en = {
   },
   apartmentDescriptions: {
     "1": {
-      name: "Deluxe Sea View Suite",
+      name: "moet verandering worden gebracht",
       description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony."
     },
     "2": {
@@ -286,18 +286,6 @@ export const en = {
       name: "Executive Beach Studio",
       description: "Elegant studio with direct beach access, modern design, and premium finishes."
     },
-    "4": {
-      name: "Luxury Penthouse Suite",
-      description: "Exclusive top-floor suite with expansive terrace and panoramic sea views."
-    },
-    "5": {
-      name: "Classic Double Room",
-      description: "Comfortable hotel room with modern amenities and partial sea views."
-    },
-    "6": {
-      name: "Garden View Apartment",
-      description: "Peaceful apartment surrounded by lush gardens, just a short walk from the beach."
-    }
   },
   amenitiesPage: {
     title: "Our Amenities",
