@@ -7,6 +7,7 @@ import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Analytics } from "@vercel/analytics/next"
 
 // Sample apartments data
 const featuredApartments: ApartmentProps[] = [
@@ -33,7 +34,7 @@ const featuredApartments: ApartmentProps[] = [
     name: "Double Basic Room - Shared Bathroom",
     description: "Room For 2 Persons - Double Bed - Shared Bathroom Outside the Room. Upper Floor. Accessible Only By Steep And Narrow Staircase - No Elevator.",
     capacity: 2,
-    size: 35,
+    size: 19,
     image: "https://static.cubilis.eu/securereservations/photos/amigo-budget-hostel-amsterdam/v3/PHOTO-2025-03-18-14-24-17-2.jpg?width=558&height=418&mode=crop&scale=both&format=jpg&quality=90",
     features: ["Wi-Fi", "Public Bathroom"]
   }
@@ -121,20 +122,6 @@ export default function Index() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* <div className="absolute -bottom-6 -left-6 w-2/3 rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1545579133-99bb5ab189bd?w=400&h=300&fit=crop"
-                    alt="Luxury apartment interior" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>"
-                <div className="absolute -top-6 -right-6 w-1/2 rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1557251407-6356f6384370?q=80&w=1470"
-                    alt="Pool view" 
-                    className="w-full h-full object-cover"
-                  />
-                </div> */}
               </div>
             </div>
           </div>
@@ -201,11 +188,7 @@ export default function Index() {
             </div>
             
             <div className="text-center mt-12">
-              {/* <Button asChild className="btn-primary">
-                <Link to="/apartments">
-                  {t.home.featuredApartments.viewAll} <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button> */}
+
               <Button asChild className="btn-primary">
                   <a 
                     href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
@@ -217,6 +200,7 @@ export default function Index() {
                 </Button>
             </div>
           </div>
+          <Analytics />
         </section>
         
         
