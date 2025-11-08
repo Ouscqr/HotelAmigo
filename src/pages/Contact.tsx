@@ -108,7 +108,7 @@ Time: ${new Date().toLocaleTimeString()}
     const body = encodeURIComponent(emailContent);
     
     // Create temporary link and click it
-    const mailtoLink = `mailto:boscarchen@icloud.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const mailtoLink = `mailto:info@amigohotel.nl?subject=${encodeURIComponent(subject)}&body=${body}`;
     const link = document.createElement('a');
     link.href = mailtoLink;
     link.click();
@@ -202,7 +202,7 @@ Time: ${new Date().toLocaleTimeString()}
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.email}</h3>
                       <p className="text-muted-foreground">Hotel@Amigo</p>
-                      <p className="text-muted-foreground">reservations@Amigo.com</p>
+                      <p className="text-muted-foreground">info@amigohotel.nl</p>
                     </div>
                   </div>
                   
