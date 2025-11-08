@@ -7,7 +7,7 @@ import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Analytics } from "@vercel/analytics/next"
+
 
 // Sample apartments data
 const featuredApartments: ApartmentProps[] = [
@@ -200,7 +200,7 @@ export default function Index() {
                 </Button>
             </div>
           </div>
-          <Analytics />
+          
         </section>
         
         

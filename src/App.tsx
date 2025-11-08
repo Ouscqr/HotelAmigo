@@ -8,8 +8,8 @@ import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { Analytics } from '@vercel/analytics/react';  // ← ADD THIS
 
-// Create a react-query client
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +29,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <Analytics />
       </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>
