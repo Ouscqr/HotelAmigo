@@ -59,7 +59,12 @@ export const zh = {
         subtitle: "预订住宿",
         title: "通往运河的门户",
         description: "检查可用性并确保您在阿姆斯特丹舒适住宿的日期。我们简便的预订流程是您荷兰冒险的第一步。",
-        benefits: ["即时确认", "最优价格保证", "灵活取消选项", "安全支付"]
+        benefits: [ "最优价格保证",  "安全支付", "即时确认"]
+      },
+      findUs: {
+        title: "找到我们",
+        location: "我们的位置",
+        description: "我们的酒店位于阿姆斯特丹的心脏地带，距离Rembrandt广场和Leidseplein仅短暂电车车程，步行即可到达Oosterpark。"
       },
       featuredApartments: {
         subtitle: "我们的住宿",

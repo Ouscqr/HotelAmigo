@@ -58,7 +58,12 @@ export const en = {
       subtitle: "Book Your Stay",
       title: "Your Gateway to the Canals",
       description: "Check availability and secure your dates for a comfortable stay in Amsterdam. Our easy booking process is the first step toward your Dutch adventure.",
-      benefits: ["Instant confirmation", "Best rate guarantee", "Flexible cancellation options", "Secure payment"]
+      benefits: ["Best rate guarantee", "Secure payment", "Instant confirmation",]
+    },
+    findUs: {
+      title: "Find Us",
+      location: "Our Location",
+      description: "Our location is conveniently located in the heart of Amsterdam, just a short tram ride from Rembrandt Square and Leidseplein, and within walking distance of Oosterpark."
     },
     featuredApartments: {
       subtitle: "Our Accommodations",

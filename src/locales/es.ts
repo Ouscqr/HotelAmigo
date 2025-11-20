@@ -59,7 +59,12 @@ export const es = {
         subtitle: "Reserva Tu Estancia",
         title: "Tu Puerta a los Canales",
         description: "Verifica la disponibilidad y asegura tus fechas para una estancia cómoda en Amsterdam. Nuestro sencillo proceso de reserva es el primer paso hacia tu aventura holandesa.",
-        benefits: ["Confirmación inmediata", "Garantía del mejor precio", "Opciones de cancelación flexibles", "Pago seguro"]
+        benefits: ["Garantía del mejor precio", "Pago seguro","Confirmación inmediata" ]
+      },
+      findUs: {
+        title: "Encuéntranos",
+        location: "Nuestra Ubicación",
+        description: "Nuestra ubicación está convenientemente ubicada en el corazón de Amsterdam, a poca distancia en tranvía de Rembrandt Square y Leidseplein, y a poca distancia a pie de Oosterpark."
       },
       featuredApartments: {
         subtitle: "Nuestros Alojamientos",

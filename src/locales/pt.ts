@@ -59,7 +59,12 @@ export const pt = {
         subtitle: "Reserve Sua Estadia",
         title: "Sua Porta para os Canais",
         description: "Verifique a disponibilidade e garanta suas datas para uma estadia confortável em Amsterdam. Nosso processo de reserva fácil é o primeiro passo para sua aventura holandesa.",
-        benefits: ["Confirmação instantânea", "Garantia de melhor preço", "Opções de cancelamento flexíveis", "Pagamento seguro"]
+        benefits: [ "Garantia de melhor preço", "Pagamento seguro", "Confirmação instantânea"]
+      },
+      findUs: {
+        title: "Encontre-nos",
+        location: "Nossa Localização",
+        description: "Nosso hotel está convenientemente localizado no coração de Amsterdam, a uma curta distância de bonde da Praça Rembrandt e Leidseplein, e a uma curta distância a pé do Oosterpark."
       },
       featuredApartments: {
         subtitle: "Nossas Acomodações",

@@ -16,7 +16,6 @@ const featuredApartments: ApartmentProps[] = [
     name: "Double Room - Private Bathroom",
     description: "2 persons room with a double bed and a private bathroom",
     capacity: 2,
-    size: 45,
     image: "https://static.cubilis.eu/securereservations/photos/amigo-budget-hostel-amsterdam/v3/658197123.jpg?width=800&height=600&mode=crop&format=jpg&quality=90",
     features: ["Wi-Fi", "Private Bathroom"]
   },
@@ -25,7 +24,6 @@ const featuredApartments: ApartmentProps[] = [
     name: "Bed in Female 8-Bed Dormitory Room",
     description: "Bed in Female 8 Person Dormitory Room - Shared Bathroom. Upper Floor. Accessible Only By Steep And Narrow Staircase - No Elevator.",
     capacity: 8,
-    size: 35,
     image: "https://static.cubilis.eu/securereservations/photos/amigo-budget-hostel-amsterdam/v3/20250213161529.png?width=558&height=418&mode=crop&scale=both&format=jpg&quality=90",
     features: ["Wi-Fi", "Public Bathroom"]
   },
@@ -34,7 +32,6 @@ const featuredApartments: ApartmentProps[] = [
     name: "Double Basic Room - Shared Bathroom",
     description: "Room For 2 Persons - Double Bed - Shared Bathroom Outside the Room. Upper Floor. Accessible Only By Steep And Narrow Staircase - No Elevator.",
     capacity: 2,
-    size: 19,
     image: "https://static.cubilis.eu/securereservations/photos/amigo-budget-hostel-amsterdam/v3/PHOTO-2025-03-18-14-24-17-2.jpg?width=558&height=418&mode=crop&scale=both&format=jpg&quality=90",
     features: ["Wi-Fi", "Public Bathroom"]
   }
@@ -199,7 +196,40 @@ export default function Index() {
                   </a>
                 </Button>
             </div>
+            
+          {/* Google Maps Section */}
+          <section className="section">
+            <div className="container">
+              <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
+                <span className="text-sm text-primary font-medium uppercase tracking-wider">
+                  {t.home.findUs.title}
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+                  {t.home.findUs.location}
+                </h2>
+                <p className="text-muted-foreground">
+                  {t.home.findUs.description}
+                </p>
+              </div>
+              
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg animate-fade-in [animation-delay:200ms]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.762273692016!2d4.92506447779338!3d52.35659677201886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60970c2a2299b%3A0x8bdb9d061cbef81!2sAmigo%20Hotel!5e0!3m2!1snl!2snl!4v1763647400947!5m2!1snl!2snl"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </section>
+            
+            
           </div>
+
+          
           
         </section>
         

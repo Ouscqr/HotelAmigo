@@ -58,7 +58,12 @@ export const it = {
       subtitle: "Prenota il Tuo Soggiorno",
       title: "La Tua Porta sui Canali",
       description: "Verifica la disponibilità e assicurati le date per un comodo soggiorno ad Amsterdam. Il nostro semplice processo di prenotazione è il primo passo verso la tua avventura olandese.",
-      benefits: ["Conferma immediata", "Garanzia migliore prezzo", "Opzioni di cancellazione flessibili", "Pagamento sicuro"]
+      benefits: [ "Garanzia migliore prezzo", "Pagamento sicuro","Conferma immediata"]
+    },
+    findUs: {
+      title: "Trova il Nostro Hotel",
+      location: "La Nostra Posizione",
+      description: "Il nostro hotel è convenientemente ubicato nel cuore di Amsterdam, a breve distanza in tram da Rembrandt Square e Leidseplein, e a pochi passi da Oosterpark."
     },
     featuredApartments: {
       subtitle: "Le Nostre Sistemazioni",
