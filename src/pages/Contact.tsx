@@ -201,7 +201,7 @@ Time: ${new Date().toLocaleTimeString()}
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.email}</h3>
-                      <p className="text-muted-foreground">Hotel@Amigo</p>
+                      <p className="text-muted-foreground">office@amigohotel.nl</p>
                       <p className="text-muted-foreground">info@amigohotel.nl</p>
                     </div>
                   </div>
