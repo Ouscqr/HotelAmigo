@@ -127,3 +127,17 @@
     transition: opacity 300ms;
   }
 }
+
+  /* Native date input styling */
+  .date-input-field::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+  .date-input-field::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+  .dark .date-input-field::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+

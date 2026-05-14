@@ -6,9 +6,11 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useBooking } from "@/contexts/BookingContext";
 
 export default function Navbar() {
   const { t } = useLanguage();
+  const { openBookingModal } = useBooking();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   
@@ -63,14 +65,8 @@ export default function Navbar() {
           <ThemeToggle />
       
           
-          <Button asChild className="btn-primary">
-            <a 
-              href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              {t.nav.bookNow}
-            </a>
+          <Button onClick={() => openBookingModal()} className="btn-primary">
+            {t.nav.bookNow}
           </Button>
         </div>
 
@@ -125,10 +121,14 @@ export default function Navbar() {
               </ul>
             </div>
             
-            <Button asChild className="w-full btn-primary mt-6">
-              <Link to="/booking" onClick={() => setMobileMenuOpen(false)}>
-                {t.nav.bookNow}
-              </Link>
+            <Button 
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openBookingModal();
+              }} 
+              className="w-full btn-primary mt-6"
+            >
+              {t.nav.bookNow}
             </Button>
           </div>
         </div>

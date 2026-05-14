@@ -5,9 +5,11 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useBooking } from "@/contexts/BookingContext";
 
 export default function HeroSection() {
   const { t } = useLanguage();
+  const { openBookingModal } = useBooking();
   const [scrollY, setScrollY] = useState(0);
   
   useEffect(() => {
@@ -55,14 +57,13 @@ export default function HeroSection() {
             {t.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button asChild size="lg" variant="heroSolid" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
-            <a 
-              href="https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            > 
-              {t.hero.bookStay}
-            </a>
+          <Button 
+            onClick={() => openBookingModal()}
+            size="lg" 
+            variant="heroSolid" 
+            className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]"
+          >
+            {t.hero.bookStay}
           </Button>
 
           </div>
