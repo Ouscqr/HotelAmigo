@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 
 const BASE_URL = "https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam/Rooms/Select";
-const DEFAULT_URL = "https://bookingengine.mylighthouse.com/amigo-budget-hostel-amsterdam";
+export const DEFAULT_URL = "https://bookingengine.mylighthouse.com/v2/amigo-budget-hostel-amsterdam";
 
 export function generateBookingUrl(checkIn?: Date, checkOut?: Date, guests?: number): string {
   if (!checkIn || !checkOut) {

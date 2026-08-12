@@ -5,11 +5,10 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useBooking } from "@/contexts/BookingContext";
+import { DEFAULT_URL } from "@/lib/booking";
 
 export default function HeroSection() {
   const { t } = useLanguage();
-  const { openBookingModal } = useBooking();
   const [scrollY, setScrollY] = useState(0);
   
   useEffect(() => {
@@ -58,7 +57,7 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button 
-            onClick={() => openBookingModal()}
+            onClick={() => window.location.href = DEFAULT_URL}
             size="lg" 
             variant="heroSolid" 
             className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]"

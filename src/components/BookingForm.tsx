@@ -10,12 +10,10 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useBooking } from "@/contexts/BookingContext";
 import { generateBookingUrl } from "@/lib/booking";
 
 export default function BookingForm() {
   const { t } = useLanguage();
-  const { openBookingModalWithDates } = useBooking();
   const [startDate, setStartDate] = useState<Date>();
   const [endDate, setEndDate] = useState<Date>();
   const [submitted, setSubmitted] = useState(false);
@@ -23,17 +21,9 @@ export default function BookingForm() {
     const handleCheckAvailability = () => {
     if (!startDate || !endDate) return;
 
-    // Smart Safari Detector
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    if (isSafari) {
-      // Apple devices: Generate the URL and load it in the same page (redirect)
-      const url = generateBookingUrl(startDate, endDate);
-      window.location.href = url;
-    } else {
-      // Chrome/Android: Load the beautiful iFrame overlay
-      openBookingModalWithDates(startDate, endDate);
-    }
+    // Load the URL in the same page since iframe embedding is blocked by the booking engine
+    const url = generateBookingUrl(startDate, endDate);
+    window.location.href = url;
     
     // Show confirmation state (if you have this in your Amigo project)
     setSubmitted(true);

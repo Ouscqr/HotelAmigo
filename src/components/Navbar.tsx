@@ -6,11 +6,10 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useBooking } from "@/contexts/BookingContext";
+import { DEFAULT_URL } from "@/lib/booking";
 
 export default function Navbar() {
   const { t } = useLanguage();
-  const { openBookingModal } = useBooking();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   
@@ -65,7 +64,7 @@ export default function Navbar() {
           <ThemeToggle />
       
           
-          <Button onClick={() => openBookingModal()} className="btn-primary">
+          <Button onClick={() => window.location.href = DEFAULT_URL} className="btn-primary">
             {t.nav.bookNow}
           </Button>
         </div>
@@ -124,7 +123,7 @@ export default function Navbar() {
             <Button 
               onClick={() => {
                 setMobileMenuOpen(false);
-                openBookingModal();
+                window.location.href = DEFAULT_URL;
               }} 
               className="w-full btn-primary mt-6"
             >
